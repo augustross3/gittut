@@ -62,6 +62,8 @@ git init
 
 **Final Note**: The term "staging area" in Git is where you prepare your changes before committing them to your project's history. By using `git add` or `git stage`, you tell Git which changes you want to include in the next commit. This allows for more granular control over your project's version history, enabling you to commit only the changes that are ready, while continuing to work on other modifications.
 
+![Git Locations](https://miro.medium.com/v2/resize:fit:686/1*diRLm1S5hkVoh5qeArND0Q.png "Git Locations")
+
 ## Understanding Branches
 
 Branches are essential for managing different lines of development. They allow you to work on new features, bug fixes, or experiments in isolation from the main codebase.
