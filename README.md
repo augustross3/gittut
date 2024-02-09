@@ -34,25 +34,33 @@ git init
 
 ### Making Your First Commit
 
-(Note: From this point on the tutorial assumes you have python installed. However, feel free to translate this this tutorial to the language of your choice just make sure to switch out file extensions in the commands and to write the proper syntax for your language in any echo calls)
+(Note: From this point on, the tutorial assumes you have Python installed. However, feel free to translate this tutorial to the language of your choice, just make sure to switch out file extensions in the commands and to write the proper syntax for your language in any echo calls)
 
 1. **Create a Python script**: Start by creating a simple script named `hello_git.py` that prints a message. This will be the first file in your Git repository.
 
-```
-echo "print('Hello, Git!')" > hello_git.py
-```
+    ```
+    echo "print('Hello, Git!')" > hello_git.py
+    ```
 
 2. **Add the file to the staging area**: Before committing any changes, you need to add them to the staging area with `git add`. This step prepares changes for a commit.
 
-```
-git add hello_git.py
-```
+    ```
+    git add hello_git.py
+    ```
+
+    Alternatively, you can use `git stage` which is synonymous with `git add` and serves the same purpose of adding changes to the staging area. 
+
+    ```
+    git stage hello_git.py
+    ```
 
 3. **Commit the file to your repository**: Use `git commit` to take a snapshot of your staged changes. The `-m` flag allows you to add a commit message, which should describe what changes were made.
 
-```
-git commit -m "Add hello_git.py"
-```
+    ```
+    git commit -m "Add hello_git.py"
+    ```
+
+**Final Note**: The term "staging area" in Git is where you prepare your changes before committing them to your project's history. By using `git add` or `git stage`, you tell Git which changes you want to include in the next commit. This allows for more granular control over your project's version history, enabling you to commit only the changes that are ready, while continuing to work on other modifications.
 
 ## Understanding Branches
 
