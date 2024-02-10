@@ -258,4 +258,4 @@ Similar to merging branches locally, pulling changes from a remote repository ca
 
 ## Conclusion
 
-You've now covered the fundamentals of using Git for version control, including setting up repositories, making commits, working with branches, and merging changes. These skills are crucial for effective collaboration and project management in software development. Practice these commands and concepts to gain proficiency and confidence in using Git for your projects.
+You've now covered the fundamentals of using Git for version control, including setting up repositories, making commits, working with branches, and merging changes. These skills are crucial for effective collaboration and project management in software development.
