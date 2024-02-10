@@ -68,37 +68,76 @@ git init
 
 Branches are essential for managing different lines of development. They allow you to work on new features, bug fixes, or experiments in isolation from the main codebase.
 
+### The "main" Branch
+
+The "main" branch (formerly known as "master" in many repositories) is the default branch created when you initialize a new Git repository. It is considered the primary branch where the source code's current working version is maintained. Changes in this branch are usually the result of merging feature branches once they are complete and tested.
+
 ### Creating a New Branch
 
 1. **Create a branch named `feature`**: Branches help you separate new development from stable code. The `git branch` command followed by a branch name creates a new branch.
 
-```
-git branch feature
-```
+    ```
+    git branch feature
+    ```
 
 2. **Switch to the `feature` branch**: To start working on this branch, use `git checkout` with the branch name. You are now in an isolated environment to make changes.
 
-```
-git checkout feature
-```
+    ```
+    git checkout feature
+    ```
 
 ### Making Changes in a Branch
 
 1. **Edit your script**: Add a new feature or message in the `hello_git.py` script. This demonstrates how changes can be made in a branch without affecting the main branch.
 
-```
-echo "print('Hello, Git! Welcome to the feature branch.')" > hello_git.py
-```
+    ```
+    echo "print('Hello, Git! Welcome to the feature branch.')" > hello_git.py
+    ```
 
 2. **Add and commit your changes**: Like before, use `git add` and `git commit` to stage and commit your changes. Commit messages should reflect the development done in this branch.
 
-```
-git add hello_git.py
-```
+    ```
+    git add hello_git.py
+    ```
+    
+    ```
+    git commit -m "Update hello_git.py with a new feature"
+    ```
 
-```
-git commit -m "Update hello_git.py with a new feature"
-```
+### Viewing Branches and Their Relationships
+
+To see what branch is the most ahead, or to understand the relationships between branches (including tags), you can use the following commands:
+
+- **List all branches**: This command shows all branches in your repository. The current branch will be marked with an asterisk.
+
+    ```
+    git branch
+    ```
+
+- **List branches with commit details**: To see the latest commit on each branch, use:
+
+    ```
+    git branch -v
+    ```
+
+- **Show all branches and their upstreams**: This includes information about which branch is tracking which upstream branch (useful for knowing what will happen on `git push` and `git pull`).
+
+    ```
+    git branch -vv
+    ```
+
+- **Graphical representation of the branch history**: To see a graphical representation of the commit history across different branches, including tags, use:
+
+    ```
+    git log --graph --oneline --all
+    ```
+
+This command combines several options: `--graph` generates a text-based graphical representation, `--oneline` condenses each commit to a single line making it easier to read, and `--all` shows all branches, not just the current one.
+
+### Conclusion
+
+Understanding how to create and manage branches in Git allows you to work on various aspects of your project in parallel. The "main" branch serves as the backbone of your project, holding the most stable and updated version of your code. Using branches effectively is key to a successful version control strategy.
+
 
 ![image](https://github.com/augustross3/gittut/assets/98359182/0463d339-94a4-469b-a82e-3578500145c8)
 
