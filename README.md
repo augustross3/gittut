@@ -100,6 +100,9 @@ git add hello_git.py
 git commit -m "Update hello_git.py with a new feature"
 ```
 
+![image](https://github.com/augustross3/gittut/assets/98359182/0463d339-94a4-469b-a82e-3578500145c8)
+
+
 ## Merging Branches
 
 Merging is the process of integrating changes from one branch into another. It's a common practice to merge a feature branch back into the main branch once development is complete.
