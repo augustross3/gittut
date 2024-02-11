@@ -1,4 +1,4 @@
-# Git Tutorial for CS Students Using a Coding Project
+# Git Tutorial
 
 Welcome to this detailed Git tutorial. Through this guide, you'll learn how to use Git from the command line by applying the commands in the context of a small coding project. The goal is for you to be comfortable using Git for version control in your own projects, covering the basics of initializing repositories, making commits, understanding branches, and using merging.
 
